@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="lab_wall">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="wall_link">
+
+      <!-- Visual mesh -->
+      <visual name="wall_visual">
+        <geometry>
+          <mesh>
+            <uri>model://lab_wall/meshes/wall.stl</uri>
+            <scale>0.0025 0.0025 0.001</scale>
+          </mesh>
+        </geometry>
+         <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.3 0.3 0.3 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+      </visual>
+
+      <!-- Simple collision -->
+      <collision name="wall_collision">
+        <pose>0 0 0.4 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 0.8 0.8</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

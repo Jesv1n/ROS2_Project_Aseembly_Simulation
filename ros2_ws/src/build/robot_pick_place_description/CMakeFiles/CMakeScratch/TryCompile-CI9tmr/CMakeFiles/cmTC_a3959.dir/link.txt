@@ -1,0 +1,1 @@
+/usr/bin/cc  -v CMakeFiles/cmTC_a3959.dir/CMakeCCompilerABI.c.o -o cmTC_a3959 

@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="onrobot_gripper_exact">
+
+  <!-- ========================= -->
+  <!-- Shared settings -->
+  <!-- ========================= -->
+  <xacro:property name="mesh_path" value="package://robot_pick_place_description/meshes/gripper_exact"/>
+  <xacro:property name="mesh_scale" value="0.001 0.001 0.001"/>
+
+  <material name="metal_gray">
+    <color rgba="0.65 0.65 0.68 1"/>
+  </material>
+
+  <material name="metal_black">
+    <color rgba="0.05 0.05 0.05 1"/>
+  </material>
+
+  <!-- ========================= -->
+  <!-- Base -->
+  <!-- ========================= -->
+  <link name="gripper_base_link">
+    <inertial>
+      <origin xyz="-0.00030179080386336256 -0.00047670368310389217 0.020678912231015475" rpy="0 0 0"/>
+      <mass value="0.7592453895368185"/>
+      <inertia ixx="0.000452" iyy="0.000705" izz="0.000689" ixy="-1e-06" iyz="-5e-06" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/base_link.stl" scale="${mesh_scale}"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/base_link.stl" scale="${mesh_scale}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ========================= -->
+  <!-- Main gripper body -->
+  <!-- ========================= -->
+  <link name="g_main_link">
+    <inertial>
+      <origin xyz="0.031843851343412694 -6.562152034605188e-05 0.0402561266087614" rpy="0 0 0"/>
+      <mass value="2.1746665575894286"/>
+      <inertia ixx="0.003297" iyy="0.00361" izz="0.00105" ixy="-1e-06" iyz="5e-06" ixz="3e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.031849 -0.000001 -0.04953" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/g_main.stl" scale="${mesh_scale}"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0.031849 -0.000001 -0.04953" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/g_main.stl" scale="${mesh_scale}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="gripper_main_fixed_joint" type="fixed">
+    <origin xyz="-0.031849 0.000001 0.04953" rpy="0 0 0"/>
+    <parent link="gripper_base_link"/>
+    <child link="g_main_link"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!-- Left outer link -->
+  <!-- ========================= -->
+  <link name="left_outer_link">
+    <inertial>
+      <origin xyz="0.010442859349590227 -0.012799625869821 0.012792983853972317" rpy="0 0 0"/>
+      <mass value="0.24195762212403002"/>
+      <inertia ixx="0.00011" iyy="0.00016" izz="0.000076" ixy="0.0" iyz="0.0" ixz="-0.000066"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.023851 -0.012801 -0.13453" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/l_out.stl" scale="${mesh_scale}"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.023851 -0.012801 -0.13453" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/l_out.stl" scale="${mesh_scale}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_outer_joint" type="revolute">
+    <origin xyz="0.0557 0.0128 0.085" rpy="0 0 0"/>
+    <parent link="g_main_link"/>
+    <child link="left_outer_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.75" upper="0.610865" effort="100" velocity="100"/>
+    <dynamics damping="0.01" friction="0.0"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!-- Right outer link -->
+  <!-- ========================= -->
+  <link name="right_outer_link">
+    <inertial>
+      <origin xyz="-0.010522665986501832 -0.012799489922871823 0.012809246687502496" rpy="0 0 0"/>
+      <mass value="0.24195762035711757"/>
+      <inertia ixx="0.00011" iyy="0.00016" izz="0.000076" ixy="0.0" iyz="0.0" ixz="0.000065"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.023749 -0.012801 -0.13453" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/r_out.stl" scale="${mesh_scale}"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0.023749 -0.012801 -0.13453" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/r_out.stl" scale="${mesh_scale}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_outer_joint" type="revolute">
+    <origin xyz="0.0081 0.0128 0.085" rpy="0 0 0"/>
+    <parent link="g_main_link"/>
+    <child link="right_outer_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.610865" upper="0.523599" effort="100" velocity="100"/>
+    <dynamics damping="0.01" friction="0.0"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!-- Left combined inner + tip -->
+  <!-- ========================= -->
+  <link name="left_inner_tip_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.18426652162693567"/>
+      <inertia ixx="0.00008" iyy="0.00008" izz="0.00003" ixy="0" iyz="0" ixz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.010551 -0.000101 -0.15763" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/l_inner_tip.stl" scale="0.0001 0.0001 0.0001"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.010551 -0.000101 -0.15763" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/l_inner_tip.stl" scale="0.0001 0.0001 0.0001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_inner_tip_joint" type="fixed">
+    <origin xyz="-0.0133 -0.0127 0.0231" rpy="0 0 0"/>
+    <parent link="left_outer_link"/>
+    <child link="left_inner_tip_link"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!-- Right combined inner + tip -->
+  <!-- ========================= -->
+  <link name="right_inner_tip_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.18426652162693592"/>
+      <inertia ixx="0.00008" iyy="0.00008" izz="0.00003" ixy="0" iyz="0" ixz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.010449 -0.000101 -0.15763" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/r_inner_tip.stl" scale="0.0001 0.0001 0.0001"/>
+      </geometry>
+      <material name="metal_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0.010449 -0.000101 -0.15763" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}/r_inner_tip.stl" scale="$0.0001 0.0001 0.0001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_inner_tip_joint" type="fixed">
+    <origin xyz="0.0133 -0.0127 0.0231" rpy="0 0 0"/>
+    <parent link="right_outer_link"/>
+    <child link="right_inner_tip_link"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!-- TCP -->
+  <!-- ========================= -->
+  <link name="hand_tcp"/>
+
+  <joint name="hand_tcp_joint" type="fixed">
+    <origin xyz="0.036 0 0.21" rpy="0 0 0"/>
+    <parent link="g_main_link"/>
+    <child link="hand_tcp"/>
+  </joint>
+
+</robot>

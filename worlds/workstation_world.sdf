@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="workstation_world">
+
+    <!-- Physics -->
+    <physics name="1ms" type="bullet-featherstone">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- GUI / scene -->
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.8 0.8 0.8 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <!-- Sun -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Ground plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.9 1</ambient>
+            <diffuse>0.9 0.9 0.9 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    <include>
+      <uri>model://lab_table</uri>
+      <pose>4 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://lab_wall</uri>
+      <pose>1 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>table_1</name>
+      <uri>model://Table</uri>
+      <pose>4.9806 4.4605 -0.0084 0.0095 -0.0021 1.5775</pose>
+      <material>
+        <ambient>0.2 0.2 0.2 1</ambient>
+        <diffuse>0.3 0.3 0.3 1</diffuse>
+        <specular>0.05 0.05 0.05 1</specular>
+      </material>
+    </include>
+    <include>
+      <name>table_2</name>
+      <uri>model://Table</uri>
+      <pose>-3.4944 -2.2795 0.0585 0.0019 0.0095 -0.0153</pose>
+      <material>
+        <ambient>0.2 0.2 0.2 1</ambient>
+        <diffuse>0.3 0.3 0.3 1</diffuse>
+        <specular>0.05 0.05 0.05 1</specular>
+      </material>
+    </include>
+    <include>
+      <name>table_3</name>
+      <uri>model://Table</uri>
+      <pose>-3.4286 3.0244 0.0585 0.0019 0.0095 -0.0153</pose>
+      <material>
+        <ambient>0.2 0.2 0.2 1</ambient>
+        <diffuse>0.3 0.3 0.3 1</diffuse>
+        <specular>0.05 0.05 0.05 1</specular>
+      </material>
+    </include>
+    <include>
+      <name>computer_1</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/MonitorAndKeyboard</uri>
+      <pose>5.0637 4.5313 1.0245 0.0023 0.0094 0.0285</pose>
+    </include>
+    <include>
+      <name>computer_2</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/MonitorAndKeyboard</uri>
+      <pose>-3.4187 3.0223 1.1015 -0.0095 0.0017 -1.6027</pose>
+    </include>
+    <include>
+      <name>computer_3</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/MonitorAndKeyboard</uri>
+      <pose>-3.5900 -2.3444 1.0924 -0.0095 0.0017 -1.6027</pose>
+    </include>
+    
+    <include>
+      <name>computer_chair_1</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/OfficeChairBlack</uri>
+      <pose>4.2119 4.3540 -0.0637 0.0095 -0.0019 1.5602</pose>
+    </include>
+    
+    <include>
+      <name>computer_chair_2</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/OfficeChairBlack</uri>
+      <pose>-3.5106 -1.5888 -0.0028 0.0022 0.0094 0.0192</pose>
+    </include>
+    <include>
+      <name>computer_chair_3</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/OfficeChairBlack</uri>
+      <pose>-3.6173 3.9754 0.0094 0.0022 0.0094 0.0192</pose>
+    </include>
+    <include>
+      <name>input_station</name>
+      <uri>model://Input_Station</uri>
+      <pose>4.8953 0.6823 1.2104 0 0 -3.1414</pose> 
+    </include>
+    <include>
+      <name>Assembly_Station</name>
+      <uri>model://Assembly_Station</uri>
+      <pose>6.1403 -0.5869 1.2219 0 0 1.5616</pose> 
+    </include>
+    
+    <include>
+      <name>battery</name>
+      <uri>model://battery</uri>
+      <pose>4.8670 0.4491 1.2101 0 0 1.5616</pose> 
+    </include>
+    
+    <include>
+      <name>motor</name>
+      <uri>model://motor</uri>
+      <pose>4.6134 0.4959 1.2365 1.5646 0 1.5616</pose> 
+    </include>
+    
+    
+  </world>
+</sdf>

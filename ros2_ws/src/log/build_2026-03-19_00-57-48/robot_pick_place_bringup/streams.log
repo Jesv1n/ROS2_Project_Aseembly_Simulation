@@ -1,0 +1,36 @@
+[1.063s] Invoking command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_pick_place_bringup build --build-base /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build install --record /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/install.log --single-version-externally-managed install_data
+[1.411s] running egg_info
+[1.412s] creating ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info
+[1.442s] writing ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/PKG-INFO
+[1.442s] writing dependency_links to ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/dependency_links.txt
+[1.442s] writing requirements to ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/requires.txt
+[1.442s] writing top-level names to ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/top_level.txt
+[1.442s] writing manifest file '../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/SOURCES.txt'
+[1.503s] reading manifest file '../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/SOURCES.txt'
+[1.504s] writing manifest file '../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info/SOURCES.txt'
+[1.504s] running build
+[1.504s] running build_py
+[1.504s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build
+[1.505s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build/lib
+[1.505s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build/lib/robot_pick_place_bringup
+[1.505s] copying robot_pick_place_bringup/__init__.py -> /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build/lib/robot_pick_place_bringup
+[1.505s] running install
+[1.510s] running install_lib
+[1.541s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages/robot_pick_place_bringup
+[1.541s] copying /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build/lib/robot_pick_place_bringup/__init__.py -> /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages/robot_pick_place_bringup
+[1.542s] byte-compiling /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages/robot_pick_place_bringup/__init__.py to __init__.cpython-312.pyc
+[1.542s] running install_data
+[1.542s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/ament_index
+[1.542s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/ament_index/resource_index
+[1.543s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/ament_index/resource_index/packages
+[1.543s] copying resource/robot_pick_place_bringup -> /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/ament_index/resource_index/packages
+[1.543s] copying package.xml -> /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup
+[1.543s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/launch
+[1.543s] copying launch/ur5e_workstation.launch.py -> /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/launch
+[1.543s] creating /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/urdf
+[1.543s] copying urdf/ur5e_with_gripper.urdf.xacro -> /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/urdf
+[1.543s] running install_egg_info
+[1.574s] Copying ../build/robot_pick_place_bringup/robot_pick_place_bringup.egg-info to /home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages/robot_pick_place_bringup-0.0.0-py3.12.egg-info
+[1.575s] running install_scripts
+[1.757s] writing list of installed files to '/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/install.log'
+[1.783s] Invoked command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_pick_place_bringup build --build-base /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build install --record /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/install.log --single-version-externally-managed install_data

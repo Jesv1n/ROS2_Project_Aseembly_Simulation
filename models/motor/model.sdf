@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="motor">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="motor">
+
+      <!-- VISUAL -->
+      <visual name="motor_visual">
+        <geometry>
+          <mesh>
+            <uri>model://motor/meshes/Motor_1.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+
+
+        <material>
+          <ambient>0.0 0.05 0.2 1</ambient>
+          <diffuse>0.0 0.2 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <emissive>0.0 0.0 0.05 1</emissive>
+        </material>
+      </visual>
+
+      <!-- COLLISION -->
+      <collision name="motor_collision">
+        <pose>0 0 0.04 0 0 0</pose> <!-- half length -->
+        <geometry>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.08</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

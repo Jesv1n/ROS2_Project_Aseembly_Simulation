@@ -1,0 +1,183 @@
+[0.113s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.113s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c15820cb680>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c15821fb3b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c15821fb3b0>>, mixin_verb=('build',))
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.147s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jesvin/robot_pick_place_project/ros2_ws/src'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(resource) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_bringup) by extension 'ros'
+[0.172s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_pick_place_bringup' with type 'ros.ament_python' and name 'robot_pick_place_bringup'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(robot_pick_place_description) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_pick_place_description' with type 'ros.ament_cmake' and name 'robot_pick_place_description'
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/jesvin/robot_pick_place_project/ros2_ws/install
+[0.194s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 70 installed packages in /home/jesvin/ws_moveit/install
+[0.196s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 428 installed packages in /opt/ros/jazzy
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'robot_pick_place_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup', 'merge_install': False, 'path': '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'robot_pick_place_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'robot_pick_place_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description', 'merge_install': False, 'path': '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_description', 'symlink_install': False, 'test_result_base': None}
+[0.270s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.271s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup' with build type 'ament_python'
+[0.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pick_place_bringup', 'ament_prefix_path')
+[0.273s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/ament_prefix_path.ps1'
+[0.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/ament_prefix_path.dsv'
+[0.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/ament_prefix_path.sh'
+[0.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.283s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_description' with build type 'ament_cmake'
+[0.283s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_description'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.533s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup'
+[0.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jesvin/robot_pick_place_project/ros2_ws/install/robot_pick_place_bringup:/home/jesvin/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_description -DCMAKE_INSTALL_PREFIX=/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description
+[1.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_pick_place_bringup build --build-base /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build install --record /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/install.log --single-version-externally-managed install_data
+[2.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_pick_place_bringup build --build-base /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/build install --record /home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_bringup/install.log --single-version-externally-managed install_data
+[2.056s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup' for CMake module files
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup' for CMake config files
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/bin'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/pkgconfig/robot_pick_place_bringup.pc'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/lib/python3.12/site-packages'
+[2.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pick_place_bringup', 'pythonpath')
+[2.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/pythonpath.ps1'
+[2.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/pythonpath.dsv'
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/hook/pythonpath.sh'
+[2.059s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/bin'
+[2.059s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pick_place_bringup)
+[2.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/package.ps1'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/package.dsv'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/package.sh'
+[2.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/package.bash'
+[2.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/robot_pick_place_bringup/package.zsh'
+[2.062s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_bringup/share/colcon-core/packages/robot_pick_place_bringup)
+[2.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[2.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[2.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jesvin/robot_pick_place_project/ros2_ws/src/build/robot_pick_place_description' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jesvin/robot_pick_place_project/ros2_ws/install/robot_pick_place_bringup:/home/jesvin/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jesvin/robot_pick_place_project/ros2_ws/src/robot_pick_place_description -DCMAKE_INSTALL_PREFIX=/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description
+[2.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pick_place_description)
+[2.365s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description' for CMake module files
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description' for CMake config files
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/bin'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/lib/pkgconfig/robot_pick_place_description.pc'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/lib/python3.12/site-packages'
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/bin'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/robot_pick_place_description/package.ps1'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/robot_pick_place_description/package.dsv'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/robot_pick_place_description/package.sh'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/robot_pick_place_description/package.bash'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/robot_pick_place_description/package.zsh'
+[2.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jesvin/robot_pick_place_project/ros2_ws/src/install/robot_pick_place_description/share/colcon-core/packages/robot_pick_place_description)
+[2.378s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[2.379s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.379s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.379s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.385s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.385s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.385s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.398s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.398s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/local_setup.ps1'
+[2.399s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/_local_setup_util_ps1.py'
+[2.400s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/setup.ps1'
+[2.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/local_setup.sh'
+[2.404s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/_local_setup_util_sh.py'
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/setup.sh'
+[2.408s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/local_setup.bash'
+[2.409s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/setup.bash'
+[2.413s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/local_setup.zsh'
+[2.413s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jesvin/robot_pick_place_project/ros2_ws/src/install/setup.zsh'

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="battery">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="battery">
+
+      <!-- VISUAL -->
+      <visual name="battery_visual">
+        <geometry>
+          <mesh>
+            <uri>model://battery/meshes/Bosch_Battery.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.3 0.3 0.3 1</specular>
+          <emissive>0.1 0 0 1</emissive>
+        </material>
+      </visual>
+
+      <!-- COLLISION -->
+      <collision name="battery_collision">
+        <pose>0 0 0.025 0 0 0</pose> <!-- half height -->
+        <geometry>
+          <box>
+            <size>0.105 0.06 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>
